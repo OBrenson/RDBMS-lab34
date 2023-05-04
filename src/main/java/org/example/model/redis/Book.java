@@ -1,11 +1,14 @@
 package org.example.model.redis;
 
 import org.springframework.data.redis.core.RedisHash;
+import org.springframework.data.redis.core.index.Indexed;
 
 @RedisHash("book")
 public class Book {
 
+
     private String id;
+    @Indexed
     private String authorId;
     private String name;
     private double price;

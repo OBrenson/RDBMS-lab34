@@ -1,1 +1,365 @@
 docker run -d --name redis-stack -p 6379:6379 -p 8001:8001 redis/redis-stack:latest
+
+
+GET http://localhost:8080/redis/book/getByAuthor?id=1
+
+<> 2023-05-04T013157.200.json
+
+###
+
+PUT http://localhost:8080/redis/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 3,
+  "name": "voinaAndMir",
+  "authorId": 1,
+  "price": 1000
+}
+
+<> 2023-05-04T013012.200.json
+
+###
+
+PUT http://localhost:8080/redis/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 2,
+  "name": "voinaAndMir",
+  "authorId": 1,
+  "price": 1000
+}
+
+<> 2023-05-04T013009.200.json
+
+###
+
+GET http://localhost:8080/redis/book/getByAuthor?id=1
+
+<> 2023-05-04T012949.200.json
+
+###
+
+GET http://localhost:8080/redis/book/getByAuthor?id=1
+
+<> 2023-05-04T010326.200.json
+
+###
+
+GET http://localhost:8080/redis/book/getByAuthor?id=1
+
+<> 2023-05-04T010248.200.json
+
+###
+
+GET http://localhost:8080/redis/book/getByAuthor?id=1
+
+<> 2023-05-04T125909.200.json
+
+###
+
+GET http://localhost:8080/redis/author/find?id=1
+
+<> 2023-05-04T125848.200.json
+
+###
+
+GET http://localhost:8080/redis/book/find?id=1
+
+<> 2023-05-04T125733.200.json
+
+###
+
+GET http://localhost:8080/redis/author/find?id=1
+
+###
+
+GET http://localhost:8080/redis/book/find?id=2
+
+###
+
+PUT http://localhost:8080/redis/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-04T125654.200.json
+
+###
+
+GET http://localhost:8080/redis/author/find?id=1
+
+###
+
+GET http://localhost:8080/redis/author/find?id=1
+
+###
+
+PUT http://localhost:8080/redis/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-04T125634.200.json
+
+###
+
+PUT http://localhost:8080/redis/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-04T125543.200.json
+
+###
+
+GET http://localhost:8080/redis/author/find?id=1
+
+###
+
+PUT http://localhost:8080/redis/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-04T125441.200.json
+
+###
+
+GET http://localhost:8080/redis/author/find?id=1
+
+###
+
+PUT http://localhost:8080/redis/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-04T125321.200.json
+
+###
+
+PUT http://localhost:8080/redis/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 1,
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-04T125257.200.json
+
+###
+
+GET http://localhost:8080/redis/author/find?id=1
+
+###
+
+GET http://localhost:8080/redis/book/getByAuthor?id=1
+
+###
+
+GET http://localhost:8080/redis/book/getByAuthor?name=lev
+
+###
+
+GET http://localhost:8080/redis/book/getByAuthor?name=lev
+
+###
+
+GET http://localhost:8080/redis/book/getByAuthor?id=1
+
+<> 2023-05-04T124903.400.json
+
+###
+
+PUT http://localhost:8080/redis/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 1,
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-04T124850.200.json
+
+###
+
+PUT http://localhost:8080/redis/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 1,
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-04T124834.200.json
+
+###
+
+GET http://localhost:8080/redis/book/find?id=2
+
+###
+
+DELETE http://localhost:8080/redis/book/delete?id=2
+
+<> 2023-05-04T124710.200.txt
+
+###
+
+GET http://localhost:8080/redis/book/find?id=2
+
+<> 2023-05-04T124642.200.json
+
+###
+
+GET http://localhost:8080/redis/book/find?id=1
+
+<> 2023-05-04T124636.200.json
+
+###
+
+PUT http://localhost:8080/redis/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 2,
+  "name": "hadjimurat",
+  "authorId": 1,
+  "price": 1000
+}
+
+<> 2023-05-04T124633.200.json
+
+###
+
+GET http://localhost:8080/redis/book/find?id=1
+
+<> 2023-05-04T122438.200.json
+
+###
+
+PUT http://localhost:8080/redis/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 3,
+  "name": "voinaAndMir",
+  "authorId": 1,
+  "price": 1000
+}
+
+<> 2023-05-04T122242.200.json
+
+###
+
+GET http://localhost:8080/redis/book/find?id=1
+
+###
+
+GET http://localhost:8080/redis/book/find?id=1
+
+<> 2023-05-04T121428.500.json
+
+###
+
+GET http://localhost:8080/redis/book/find?id=1
+
+<> 2023-05-04T121233.500.json
+
+###
+
+GET http://localhost:8080/redis/book/find?id=1
+
+<> 2023-05-04T121121.500.json
+
+###
+
+PUT http://localhost:8080/redis/book/create
+Content-Type: application/json
+Accept: application/json
+ott-invoker: module_C
+
+{
+  "id": 1,
+  "name": "voinaAndMir",
+  "authorId": 1,
+  "price": 1000
+}
+
+<> 2023-05-04T120034.200.json
+
+###
+
+PUT http://localhost:8080/redis/book/create
+Content-Type: application/json
+Accept: application/json
+ott-invoker: module_C
+
+{
+  "id": 1,
+  "name": "voinaAndMir",
+  "authorId": 1,
+  "price": 1000
+}
+
+<> 2023-05-04T120015.400.json
+
+###
+
+PUT http://localhost:8080/redis/book/create?name=voina_i_mir
+Accept: */*
+Cache-Control: no-cache
+
+<> 2023-05-04T115521.400.json
+
+###
+
+PUT http://localhost:8080/redis/book/create
+Accept: */*
+Cache-Control: no-cache
+
+<> 2023-05-04T115449.400.json
+
+###
+
+PUT http://localhost/redis/book/create?name=bulgakov
+
+###
+

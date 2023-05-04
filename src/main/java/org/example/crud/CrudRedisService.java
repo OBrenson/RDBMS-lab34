@@ -58,7 +58,6 @@ public class CrudRedisService implements CrudService {
 
     @Override
     public List<Book> getBooksByAuthor(String id) {
-        return StreamSupport.stream(bookRepository.findAll().spliterator(), false)
-                .filter(b -> b.getAuthorId().equals(id)).collect(Collectors.toList());
+        return bookRepository.findAllByAuthorId(id);
     }
 }
