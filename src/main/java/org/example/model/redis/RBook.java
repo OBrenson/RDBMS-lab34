@@ -1,10 +1,11 @@
 package org.example.model.redis;
 
+import org.example.model.Book;
 import org.springframework.data.redis.core.RedisHash;
 import org.springframework.data.redis.core.index.Indexed;
 
 @RedisHash("book")
-public class Book {
+public class RBook extends Book {
 
 
     private String id;
@@ -13,17 +14,17 @@ public class Book {
     private String name;
     private double price;
 
-    public Book(){
+    public RBook(){
     }
 
-    public Book(String id, String authorId, String name, double price) {
+    public RBook(String id, String authorId, String name, double price) {
         this.id = id;
         this.authorId = authorId;
         this.name = name;
         this.price = price;
     }
 
-    public Book(String id) {
+    public RBook(String id) {
         this.id = id;
     }
 

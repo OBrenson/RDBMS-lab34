@@ -1,23 +1,23 @@
 package org.example.api;
 
-import org.example.model.redis.Author;
-import org.example.model.redis.Book;
+import org.example.model.Author;
+import org.example.model.Book;
 
 import java.util.List;
 
-public interface ControllerApi {
+public interface ControllerApi <B extends Book, A extends Author> {
 
-    String saveBook(Book book);
+    String saveBook(B book);
 
-    String saveAuthor(Author author);
+    String saveAuthor(A author);
 
     String deleteBook(String id);
 
     String deleteAuthor(String id);
 
-    Book findBook(String id);
+    B findBook(String id);
 
-    Author findAuthor(String id);
+    A findAuthor(String id);
 
-    List<Book> getBooksByAuthor(String name);
+    List<B> getBooksByAuthor(String id);
 }

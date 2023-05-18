@@ -1,24 +1,24 @@
 package org.example.crud;
 
-import org.example.model.redis.Author;
-import org.example.model.redis.Book;
+import org.example.model.Author;
+import org.example.model.Book;
 
 import java.util.List;
 
-public interface CrudService {
+public interface CrudService<B extends Book, A extends Author> {
 
-    Book saveBook(Book book);
+    B saveBook(B book);
 
-    Author saveAuthor(Author author);
+    A saveAuthor(A author);
 
     String deleteBook(String id);
 
     String deleteAuthor(String id);
 
-    Book getBook(String id);
+    B getBook(String id);
 
-    Author getAuthor(String id);
+    A getAuthor(String id);
 
-    List<Book> getBooksByAuthor(String id);
+    List<B> getBooksByAuthor(String id);
 
 }

@@ -1,18 +1,16 @@
 package org.example.crud;
 
-import org.example.model.redis.Author;
-import org.example.model.redis.Book;
+import org.example.model.redis.RAuthor;
+import org.example.model.redis.RBook;
 import org.example.repo.redis.AuthorRepository;
 import org.example.repo.redis.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.StreamSupport;
 
 @Component
-public class CrudRedisService implements CrudService {
+public class CrudRedisService implements CrudService<RBook, RAuthor> {
 
     private static String OK = "OK";
     private final BookRepository bookRepository;
@@ -25,39 +23,39 @@ public class CrudRedisService implements CrudService {
     }
 
     @Override
-    public Book saveBook(Book book) {
+    public RBook saveBook(RBook book) {
         return bookRepository.save(book);
     }
 
     @Override
-    public Author saveAuthor(Author author) {
+    public RAuthor saveAuthor(RAuthor author) {
         return authorRepository.save(author);
     }
 
     @Override
     public String deleteBook(String id) {
-        bookRepository.delete(new Book(id));
+        bookRepository.delete(new RBook(id));
         return OK;
     }
 
     @Override
     public String deleteAuthor(String id) {
-        authorRepository.delete(new Author(id));
+        authorRepository.delete(new RAuthor(id));
         return OK;
     }
 
     @Override
-    public Book getBook(String id) {
+    public RBook getBook(String id) {
         return bookRepository.findById(id).orElse(null);
     }
 
     @Override
-    public Author getAuthor(String id) {
+    public RAuthor getAuthor(String id) {
         return authorRepository.findById(id).orElse(null);
     }
 
     @Override
-    public List<Book> getBooksByAuthor(String id) {
+    public List<RBook> getBooksByAuthor(String id) {
         return bookRepository.findAllByAuthorId(id);
     }
 }

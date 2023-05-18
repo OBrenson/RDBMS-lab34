@@ -1,24 +1,25 @@
 package org.example.model.redis;
 
+import org.example.model.Author;
 import org.springframework.data.redis.core.RedisHash;
 
 @RedisHash("author")
-public class Author {
+public class RAuthor extends Author {
 
     private String id;
     private String name;
     private int year;
 
-    public Author() {
+    public RAuthor() {
     }
 
-    public Author(String id, String name, int year) {
+    public RAuthor(String id, String name, int year) {
         this.id = id;
         this.name = name;
         this.year = year;
     }
 
-    public Author(String id) {
+    public RAuthor(String id) {
         this.id = id;
     }
 

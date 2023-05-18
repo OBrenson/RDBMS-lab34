@@ -1,14 +1,14 @@
 package org.example.repo.redis;
 
-import org.example.model.redis.Book;
+import org.example.model.redis.RBook;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface BookRepository extends CrudRepository<Book, String> {
+public interface BookRepository extends CrudRepository<RBook, String> {
 
-    List<Book> findAllByAuthorId(String authorId);
+    List<RBook> findAllByAuthorId(String authorId);
 
 }
