@@ -4,6 +4,8 @@ docker run -d -p 27017:27017 --name test-mongo mongo:latest
 
 docker exec -it test-mongo mongosh
 
+docker run --env NEO4J_AUTH=none -d --name neo4j -p 7474:7474 -p 7687:7687 neo4j
+
 GET http://localhost:8080/redis/book/getByAuthor?id=1
 
 <> 2023-05-04T013157.200.json

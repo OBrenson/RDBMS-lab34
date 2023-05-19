@@ -17,6 +17,7 @@ dependencies {
     implementation 'redis.clients:jedis:3.3.0'
     implementation 'org.springframework.data:spring-data-mongodb:3.0.3.RELEASE'
     implementation 'org.mongodb:mongodb-driver-sync:4.0.5'
+    implementation 'org.springframework.boot:spring-boot-starter-data-neo4j'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 

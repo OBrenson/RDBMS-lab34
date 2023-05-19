@@ -1,3 +1,501 @@
+PUT http://localhost:8080/neo4j/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 2,
+  "name": "война и мир",
+  "author": {
+    "id": "1",
+    "name": "lev",
+    "year": 1845
+  },
+  "price": 1000
+}
+
+<> 2023-05-19T115453.200.json
+
+###
+
+PUT http://localhost:8080/neo4j/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 2,
+  "name": "война и мир",
+  "author": {
+    "id": "1",
+    "name": "lev",
+    "year": 1845
+  },
+  "price": 1000
+}
+
+<> 2023-05-19T115246.200.json
+
+###
+
+PUT http://localhost:8080/neo4j/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 2,
+  "name": "война и мир",
+  "author": {
+    "id": "1",
+    "name": "lev",
+    "year": 1845
+  },
+  "price": 1000
+}
+
+<> 2023-05-19T115057.200.json
+
+###
+
+GET http://localhost:8080/neo4j/book/getByAuthor?id=1
+
+<> 2023-05-19T115026.200.json
+
+###
+
+GET http://localhost:8080/mogo/neo4j/getByAuthor?id=1
+
+<> 2023-05-19T115012.404.json
+
+###
+
+PUT http://localhost:8080/neo4j/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 2,
+  "name": "война и мир",
+  "author": {
+    "id": "1",
+    "name": "lev",
+    "year": 1845
+  },
+  "price": 1000
+}
+
+<> 2023-05-19T114934.200.json
+
+###
+
+PUT http://localhost:8080/neo4j/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 3,
+  "name": "анна каренина",
+  "author": {
+    "id": "1",
+    "name": "lev",
+    "year": 1845
+  },
+  "price": 1000
+}
+
+<> 2023-05-19T114822.200.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T113932.200.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T112256.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T112241.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T112151.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T111854.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T111824.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T111749.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T111123.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T111054.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T110945.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T110228.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T110157.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T105953.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T105830.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T105722.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T105526.500.json
+
+###
+
+PUT http://localhost:8080/neo4j/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T105441.500.json
+
+###
+
+PUT http://localhost:8080/neoj4/author/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": "1",
+  "name": "lev",
+  "year": 1845
+}
+
+<> 2023-05-19T105418.404.json
+
+###
+
+GET http://localhost:8080/redis/author/find?id=1
+
+<> 2023-05-19T090000.200.json
+
+###
+
+GET http://localhost:8080/redis/author/find?id=1
+
+###
+
+GET http://localhost:8080/mongo/book/getByAuthor?id=1
+
+<> 2023-05-19T085727.200.json
+
+###
+
+GET http://localhost:8080/mongo/book/getByAuthor?id=1
+
+<> 2023-05-19T085450.200.json
+
+###
+
+GET http://localhost:8080/mongo/book/getByAuthor?id=1
+
+<> 2023-05-19T085356.200.json
+
+###
+
+PUT http://localhost:8080/neo4j/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 3,
+  "name": "анна каренина",
+  "authorId": 1,
+  "price": 1000
+}
+
+<> 2023-05-19T085347.200.json
+
+###
+
+GET http://localhost:8080/mongo/book/getByAuthor?id=1
+
+<> 2023-05-19T085311.200.json
+
+###
+
+GET http://localhost:8080/moтgo/book/getByAuthor?id=1
+
+<> 2023-05-19T085305.404.json
+
+###
+
+GET http://localhost:8080/neo4j/book/getByAuthor?id=1
+
+<> 2023-05-19T085255.404.json
+
+###
+
+GET http://localhost:8080/mongo/book/find?id=2
+
+<> 2023-05-19T085249.200.json
+
+###
+
+GET http://localhost:8080/mongo/book/find?id=1
+
+<> 2023-05-19T085246.200.json
+
+###
+
+PUT http://localhost:8080/mongo/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 1,
+  "name": "война и мир",
+  "authorId": 1,
+  "price": 1000
+}
+
+<> 2023-05-19T085243.200.json
+
+###
+
+GET http://localhost:8080/mongo/book/find?id=2
+
+<> 2023-05-19T085210.200.json
+
+###
+
+GET http://localhost:8080/mongo/book/find?id=2
+
+<> 2023-05-19T085200.200.json
+
+###
+
+PUT http://localhost:8080/mongo/book/create
+Content-Type: application/json
+Accept: application/json
+
+{
+  "id": 2,
+  "name": "hadjimurat",
+  "authorId": 1,
+  "price": 1000
+}
+
+<> 2023-05-19T085153.200.json
+
+###
+
+GET http://localhost:8080/mongo/book/find?id=2
+
+<> 2023-05-19T085053.500.json
+
+###
+
+GET http://localhost:8080/mongo/book/find?id=2
+
+<> 2023-05-19T085039.500.json
+
+###
+
+GET http://localhost:8080/mongo/book/getByAuthor?id=1
+
+<> 2023-05-19T085016.200.json
+
+###
+
+GET http://localhost:8080/mongo/author/find?id=1
+
+<> 2023-05-19T085004.200.json
+
+###
+
 GET http://localhost:8080/mongo/author/delete?id=1
 
 <> 2023-05-18T103537.405.json
@@ -31,379 +529,6 @@ GET http://localhost:8080/mongo/book/getByAuthor?id=1
 GET http://localhost:8080/mongo/book/getByAuthor?id=1
 
 <> 2023-05-18T102705.404.json
-
-###
-
-GET http://localhost:8080/redis/book/getByAuthor?id=1
-
-<> 2023-05-18T102658.500.json
-
-###
-
-GET http://localhost:8080/mogo/book/getByAuthor?id=1
-
-<> 2023-05-18T102502.500.json
-
-###
-
-GET http://localhost:8080/mongo/book/find?id=2
-
-<> 2023-05-18T102433.200.json
-
-###
-
-GET http://localhost:8080/mongo/book/find?id=1
-
-<> 2023-05-18T102355.500.json
-
-###
-
-PUT http://localhost:8080/mongo/book/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": 2,
-  "name": "hadjimurat",
-  "authorId": 1,
-  "price": 1000
-}
-
-<> 2023-05-18T102346.200.json
-
-###
-
-GET http://localhost:8080/mongo/author/delete?id=1
-
-<> 2023-05-18T102316.200.json
-
-###
-
-PUT http://localhost:8080/mongo/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": "1",
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-18T102259.200.json
-
-###
-
-GET http://localhost:8080/mongo/author/find?id=1
-
-<> 2023-05-18T101706.500.json
-
-###
-
-GET http://localhost:8080/redis/author/find?id=1
-
-<> 2023-05-18T101658.500.json
-
-###
-
-PUT http://localhost:8080/mongo/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": "1",
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-18T101637.200.json
-
-###
-
-PUT http://localhost:8080/mongo/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": "1",
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-18T101447.404.json
-
-###
-
-PUT http://localhost:8080/mongo/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": "1",
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-18T101430.404.json
-
-###
-
-PUT http://localhost:8080/redis/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": "1",
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-18T101422.500.json
-
-###
-
-GET http://localhost:8080/redis/book/getByAuthor?id=1
-
-<> 2023-05-04T013157.200.json
-
-###
-
-PUT http://localhost:8080/redis/book/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": 3,
-  "name": "voinaAndMir",
-  "authorId": 1,
-  "price": 1000
-}
-
-<> 2023-05-04T013012.200.json
-
-###
-
-PUT http://localhost:8080/redis/book/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": 2,
-  "name": "voinaAndMir",
-  "authorId": 1,
-  "price": 1000
-}
-
-<> 2023-05-04T013009.200.json
-
-###
-
-GET http://localhost:8080/redis/book/getByAuthor?id=1
-
-<> 2023-05-04T012949.200.json
-
-###
-
-GET http://localhost:8080/redis/book/getByAuthor?id=1
-
-<> 2023-05-04T010326.200.json
-
-###
-
-GET http://localhost:8080/redis/book/getByAuthor?id=1
-
-<> 2023-05-04T010248.200.json
-
-###
-
-GET http://localhost:8080/redis/book/getByAuthor?id=1
-
-<> 2023-05-04T125909.200.json
-
-###
-
-GET http://localhost:8080/redis/author/find?id=1
-
-<> 2023-05-04T125848.200.json
-
-###
-
-GET http://localhost:8080/redis/book/find?id=1
-
-<> 2023-05-04T125733.200.json
-
-###
-
-GET http://localhost:8080/redis/author/find?id=1
-
-###
-
-GET http://localhost:8080/redis/book/find?id=2
-
-###
-
-PUT http://localhost:8080/redis/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": "1",
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-04T125654.200.json
-
-###
-
-GET http://localhost:8080/redis/author/find?id=1
-
-###
-
-GET http://localhost:8080/redis/author/find?id=1
-
-###
-
-PUT http://localhost:8080/redis/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": "1",
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-04T125634.200.json
-
-###
-
-PUT http://localhost:8080/redis/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": "1",
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-04T125543.200.json
-
-###
-
-GET http://localhost:8080/redis/author/find?id=1
-
-###
-
-PUT http://localhost:8080/redis/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": "1",
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-04T125441.200.json
-
-###
-
-GET http://localhost:8080/mongo/author/find?id=1
-
-###
-
-PUT http://localhost:8080/mongo/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": "1",
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-04T125321.200.json
-
-###
-
-PUT http://localhost:8080/redis/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": 1,
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-04T125257.200.json
-
-###
-
-GET http://localhost:8080/redis/author/find?id=1
-
-###
-
-GET http://localhost:8080/redis/book/getByAuthor?id=1
-
-###
-
-GET http://localhost:8080/redis/book/getByAuthor?name=lev
-
-###
-
-GET http://localhost:8080/redis/book/getByAuthor?name=lev
-
-###
-
-GET http://localhost:8080/redis/book/getByAuthor?id=1
-
-<> 2023-05-04T124903.400.json
-
-###
-
-PUT http://localhost:8080/redis/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": 1,
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-04T124850.200.json
-
-###
-
-PUT http://localhost:8080/redis/author/create
-Content-Type: application/json
-Accept: application/json
-
-{
-  "id": 1,
-  "name": "lev",
-  "year": 1845
-}
-
-<> 2023-05-04T124834.200.json
-
-###
-
-GET http://localhost:8080/redis/book/find?id=2
-
-###
-
-DELETE http://localhost:8080/mongo/book/delete?id=2
-
-<> 2023-05-04T124710.200.txt
-
-###
-
-GET http://localhost:8080/redis/book/find?id=2
-
-<> 2023-05-04T124642.200.json
 
 ###
 
