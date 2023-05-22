@@ -21,4 +21,7 @@ public interface CrudService<B extends Book, A extends Author> {
 
     List<B> getBooksByAuthor(String id);
 
+    List<B> findAllBooks();
+
+    List<A> findAllAuthors();
 }

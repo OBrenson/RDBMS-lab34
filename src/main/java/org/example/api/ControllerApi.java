@@ -20,4 +20,8 @@ public interface ControllerApi <B extends Book, A extends Author> {
     A findAuthor(String id);
 
     List<B> getBooksByAuthor(String id);
+
+    List<B> findAllBooks();
+
+    List<A> findAllUsers();
 }

@@ -5,6 +5,8 @@ import org.example.model.Book;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 public abstract class AbstractCrudService<B extends Book, A extends Author> implements CrudService<B, A>{
 
@@ -52,4 +54,18 @@ public abstract class AbstractCrudService<B extends Book, A extends Author> impl
 
     @Override
     public abstract List<B> getBooksByAuthor(String id);
+
+    @Override
+    public List<B> findAllBooks() {
+        Iterable<B> iterable = bookRepo.findAll();
+        return StreamSupport.stream(iterable.spliterator(), false)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<A> findAllAuthors() {
+        Iterable<A> iterable = authorRepo.findAll();
+        return StreamSupport.stream(iterable.spliterator(), false)
+                .collect(Collectors.toList());
+    }
 }

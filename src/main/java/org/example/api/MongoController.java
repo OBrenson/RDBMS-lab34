@@ -55,4 +55,16 @@ public class MongoController implements ControllerApi<MBook, MAuthor> {
     public List<MBook> getBooksByAuthor(@RequestParam(name = "id") String id) {
         return crudMongoService.getBooksByAuthor(id);
     }
+
+    @Override
+    @GetMapping("/book/all")
+    public List<MBook> findAllBooks() {
+        return crudMongoService.findAllBooks();
+    }
+
+    @Override
+    @GetMapping("/author/all")
+    public List<MAuthor> findAllUsers() {
+        return crudMongoService.findAllAuthors();
+    }
 }

@@ -55,4 +55,16 @@ public class Neo4jController implements ControllerApi<NBook, NAuthor> {
     public List<NBook> getBooksByAuthor(@RequestParam(name = "id") String id) {
         return crudNeo4jService.getBooksByAuthor(id);
     }
+
+    @Override
+    @GetMapping("/book/all")
+    public List<NBook> findAllBooks() {
+        return crudNeo4jService.findAllBooks();
+    }
+
+    @Override
+    @GetMapping("/author/all")
+    public List<NAuthor> findAllUsers() {
+        return crudNeo4jService.findAllAuthors();
+    }
 }

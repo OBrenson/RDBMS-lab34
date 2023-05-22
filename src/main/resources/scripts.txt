@@ -6,6 +6,27 @@ docker exec -it test-mongo mongosh
 
 docker run --env NEO4J_AUTH=none -d --name neo4j -p 7474:7474 -p 7687:7687 neo4j
 
+docker-compose up -d
+>docker exec -it cassandra-dev /bin/bash
+>cqlsh
+
+CREATE KEYSPACE test WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 1, ‘dc1’:1};
+
+use test;
+
+CREATE TABLE author(
+   id text PRIMARY KEY,
+   name text,
+   year int
+);
+
+CREATE TABLE book(
+   id text PRIMARY KEY,
+   name text,
+   price double,
+      authorId text
+);
+
 GET http://localhost:8080/redis/book/getByAuthor?id=1
 
 <> 2023-05-04T013157.200.json

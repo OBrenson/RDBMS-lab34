@@ -53,4 +53,16 @@ public class RedisController implements ControllerApi<RBook, RAuthor> {
     public List<RBook> getBooksByAuthor(@RequestParam(name = "id") String id) {
         return crudRedisService.getBooksByAuthor(id);
     }
+
+    @Override
+    @GetMapping("/book/all")
+    public List<RBook> findAllBooks() {
+        return crudRedisService.findAllBooks();
+    }
+
+    @Override
+    @GetMapping("/author/all")
+    public List<RAuthor> findAllUsers() {
+        return crudRedisService.findAllAuthors();
+    }
 }

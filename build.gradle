@@ -18,6 +18,10 @@ dependencies {
     implementation 'org.springframework.data:spring-data-mongodb:3.0.3.RELEASE'
     implementation 'org.mongodb:mongodb-driver-sync:4.0.5'
     implementation 'org.springframework.boot:spring-boot-starter-data-neo4j'
+//    implementation 'com.datastax.cassandra:cassandra-driver-core:2.1.9'
+//    implementation 'org.springframework:spring-aop'
+    implementation 'org.springframework.boot:spring-boot-starter-data-cassandra:2.7.12'
+//    implementation 'org.hectorclient:hector-core:2.0-0'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
